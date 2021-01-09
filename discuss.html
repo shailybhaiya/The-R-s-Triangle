@@ -3,8 +3,10 @@
 
 <meta charset="utf-8">
 <title>Aspire For Her</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/styles.css" />
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -13,7 +15,7 @@
 
 
 <head>
-  <div class="navbar">
+  <div class="head">
     <span><a>Aspire For Her</a></span>
     <span><a href="">About us</a></span>
     <span><a href="discuss.html">Discussion Forum</a></span>
@@ -22,7 +24,7 @@
   </div>
 </head>
 
-<h1>Spread The Word</h1>
+<h1 style="letter-spacing:2px;text-transform:uppercase;font-size:35px">Spread The Word</h1>
 
 
 <body>
@@ -34,7 +36,7 @@
 
           <h3>Interview Experience</h3>
           <p>Share your interview Experience</p>
-          <!-- <p>Some text</p> -->
+
         </div>
 
       </a>
@@ -44,87 +46,147 @@
     <div class="column">
       <a href="#Vacancies">
         <div class="card">
-          <h3>Job Vacancies</h3>
+          <h3>Job Opportunities</h3>
           <p>Looking for an appropriate candidature,we'll help you find one</p>
-          <!-- <p>Some text</p> -->
+
+        </div>
+      </a>
+    </div>
+    <div class="column">
+      <a href="#discuss">
+        <div class="card">
+          <h3>General Discussion</h3>
+          <p>Spread your network:- Grow Learn and interact</p>
+
+        </div>
+      </a>
+    </div>
+    <div class="column">
+      <a href="#">
+        <div class="card">
+          <h3>Frequently asked questions</h3>
+          <p>Spread your network:- Grow Learn and interact</p>
+
         </div>
       </a>
     </div>
 
-    <div class="column">
-      <div class="card">
-        <h3>Genral Discussion</h3>
-        <p>Grow your network:-interact,learn and spread</p>
-        <!-- <p>Some text</p> -->
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="margin-top:10px;">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/female.png" class="d-block w-100" alt="..." style="height:30%">
+        </div>
+        <div class="carousel-item">
+          <img src="images/female-2.png" class="d-block w-100" alt="..." style="height:30%">
+        </div>
+        <div class="carousel-item">
+          <img src="images/girl.png" class="d-block w-100" alt="..." style="height:30%">
+        </div>
       </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+    <div class="Interview" id="interact" style="width:80%; margin:auto; text-align:center;">
+
+      <h1 style="color: #03506F; letter-spacing: 3px;font-family:cursive">Interview Experience</h1>
+      <h3 class="center-head">
+        Share your experiences that you experienced and help your colleagues gain inspiration from them.
+      </h3>
+
+
+      <form action="POST" id="usrform">
+        <!-- <label> Name</label> -->
+        <input type="text" name="usrname" class="Name" placeholder="Name">
+        <br>
+        <!-- <label> Title</label>  -->
+        <input type="text" name="Title" class="Name" placeholder="Title">
+
+      </form>
+      <br>
+      <!-- <label >Post your views here</label> -->
+      <textarea rows="4" cols="50" name="comment" form="usrform">
+
+  </textarea>
+
+
+      <p><input type="submit" class="submit-btn" style="width:30%;border-radius:8px;border: 1px solid black;"></p>
+
+    </div>
+<hr style="margin:40px auto;color:black;height:2px;width:40%;" >
+
+
+
+
+
+
+    <div class="Job-Vacancies" id="Vacancies" style="width:80%; margin:auto; text-align:center;">
+
+      <h1 style="color: #03506F; letter-spacing: 3px;font-family:cursive">Job Opportunities</h1>
+      <h3 class="center-head">
+        Post the job vacancy and help your very own members serve the society.
+      </h3>
+
+
+      <form action="POST" id="usrform">
+        <!-- <label> Name</label> -->
+        <input type="text" name="usrname" class="Name" placeholder="Name">
+        <br>
+        <!-- <label> Title</label>  -->
+        <input type="text" name="Title" class="Name" placeholder="Title">
+
+      </form>
+      <br>
+      <!-- <label >Post your views here</label> -->
+      <textarea rows="4" cols="50" name="comment" form="usrform">
+
+      </textarea>
+
+
+      <p><input type="submit" class="submit-btn" style="width:30%;border-radius:8px;border: 1px solid black;"></p>
+
+
+
+
+    </div>
+    <hr style="margin:40px auto;color:black;height:2px;width:40%;" >
+    <div class="Disussion" id="discuss" style="width:80%; margin:auto; text-align:center">
+
+
+
+            <h1 style="color: #03506F; letter-spacing: 3px;font-family:cursive">Discussion</h1>
+            <h3 class="center-head">
+              Geberal Discussion
+              </h3>
+
+
+            <form action="POST" id="usrform">
+              <!-- <label> Name</label> -->
+              <input type="text" name="usrname" class="Name" placeholder="Name">
+              <br>
+              <!-- <label> Title</label>  -->
+              <input type="text" name="Title" class="Name" placeholder="Title">
+
+            </form>
+            <br>
+            <!-- <label >Post your views here</label> -->
+            <textarea rows="4" cols="50" name="comment" form="usrform">
+
+            </textarea>
+
+
+            <p><input type="submit" class="submit-btn" style="width:30%;border-radius:8px;border: 1px solid black;"></p>
+
+
 
     </div>
 
-    <div class="column">
-      <div class="card">
-        <h3>FAQs</h3>
-        <p>Some text</p>
-        <p>Some text</p>
-      </div>
-    </div>
-  </div>
-
-
-  <div>
-    <img src="images/female.png" class="female" alt="female">
-  </div>
-
-
-  <div class="Interview" id="interact">
-
-    <h1>Interview Experience</h1>
-    <h3 class="center-head">
-      Share your experiences that you experienced and help your colleagues gain inspiration from them.
-    </h3>
-
-    <form action="POST" id="usrform">
-      Name: <input type="text" name="usrname" class="Name">
-
-      Title: <input type="text" name="Title" class="Name">
-
-    </form>
-    <br>
-    <textarea rows="4" cols="50" name="comment" form="usrform">
-  Enter text here...</textarea>
-
-    <!-- <p>The text area above is outside the form element, but should still be a part of the form.</p> -->
-    <p><input type="submit"></p>
-
-  </div>
-  <h1>Sample Blog template</h1>
-  <div :black>
-
-
-    <!-- <img src="images/blog-2.jpeg" alt="blog" class="blog"> -->
-  </div>
-
-  <hr>
-  <div class="Job-Vacancies" id="Vacancies">
-
-    <h1>Job Vacancies</h1>
-    <h3 class="center-head">
-      Share your experiences that you experienced and help your colleagues gain inspiration from them.
-    </h3>
-
-    <form action="POST" id="usrform">
-      Name: <input type="text" name="usrname" class="Name">
-
-      Title: <input type="text" name="Title" class="Name">
-
-    </form>
-    <br>
-    <textarea rows="4" cols="50" name="comment" form="usrform">
-  Enter text here...</textarea>
-
-    <!-- <p>The text area above is outside the form element, but should still be a part of the form.</p> -->
-    <p><input type="submit"></p>
-
-  </div>
 
 
 
